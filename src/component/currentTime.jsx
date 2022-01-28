@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class Time extends Component {
     state={
         date:new Date()
@@ -13,9 +12,17 @@ class Time extends Component {
     }
     render() { 
         return( 
-        <div>
-            <h1>Current Time</h1>
-            <h2> {this.state.date.toLocaleTimeString()}</h2>
+        <div
+        
+        style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "lightred"
+          }}
+        >
+            <h1>Current Time  </h1>
+            <h1> {this.state.date.toLocaleTimeString()}</h1>
             {this.timer()}             
         </div>
         );
