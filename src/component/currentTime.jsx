@@ -11,6 +11,7 @@ class Time extends Component {
         }, 1000);
       
     }
+    
     render() { 
         return( 
         <div>
