@@ -3,6 +3,7 @@ class Time extends Component {
     state={
         date:new Date()
     };
+    
     timer(){
         setInterval(() => {
             this.setState({date:new Date()})
@@ -15,14 +16,12 @@ class Time extends Component {
         <div
         
         style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "lightred"
+            display: "grid",
+            justifyContent: "center",       
           }}
         >
-            <h1>Current Time  </h1>
-            <h1> {this.state.date.toLocaleTimeString()}</h1>
+            <h1>Current Time</h1>
+            <h1>{this.state.date.toLocaleTimeString()}</h1>
             {this.timer()}             
         </div>
         );
